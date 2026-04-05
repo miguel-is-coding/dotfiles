@@ -1,0 +1,15 @@
+[alias]
+	lg = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit
+[init]
+	defaultBranch = main
+[user]
+	name = Miguel Ángel Pérez García
+	email = miguel.perez@leanmind.es
+[core]
+	autocrlf = input
+
+[includeIf "gitdir:_dev/leanmind/partners/tii/"]
+    path = ~/.gitconfig-leanmind-tii
+
+[includeIf "gitdir:_dev/personal/"]
+    path = ~/.gitconfig-personal
